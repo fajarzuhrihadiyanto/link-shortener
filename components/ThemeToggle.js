@@ -40,7 +40,7 @@ const ThemeToggle = () => {
 
     return (
         <div className="absolute flex space-x-3 top-10 right-10 ">
-            <SunIcon className={"w-6 h-6 text-"+(isDark ? "yellow-300" : "yellow-400")}/>
+            <SunIcon className={"w-6 h-6 "+(isDark ? "text-yellow-300" : "text-yellow-400")}/>
             <Switch
                 checked={isDark}
                 onChange={themeToggleHandler}
@@ -55,7 +55,7 @@ const ThemeToggle = () => {
                     } transform transition ease-in-out duration-200 inline-block w-4 h-4 transform bg-white rounded-full`}
                 />
             </Switch>
-            <MoonIcon className={"w-6 h-6 text-"+(isDark ? "gray-300" : "gray-400")}/>
+            <MoonIcon className={"w-6 h-6 "+(isDark ? "text-gray-300" : "text-gray-400")}/>
         </div>
     )
 }

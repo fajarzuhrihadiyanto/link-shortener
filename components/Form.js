@@ -132,19 +132,19 @@ const Form = () => {
                         id="original-link"
                         value={originalLink}
                         onChange={onOriginalLinkChange}
-                        className={"block w-full p-2 sm:p-4 border rounded-md text-"+theme.text+" bg-"+theme.input+" " + (originalLinkError !== "" ? "border-red-500" : ("border-" + theme.btnOutline))}
+                        className={"block w-full p-2 sm:p-4 border rounded-md "+theme.text+" "+theme.input+" " + (originalLinkError !== "" ? "border-red-500" : theme.btnOutline)}
                         placeholder="https://example.com/very/very-long/path-to-write"
                     />
                     {originalLinkError !== "" && <p className="mt-2 text-red-500 text-sm">{originalLinkError}</p>}
                 </div>
-                <button className={"flex items-center px-5 py-2 sm:px-10 sm:py-4 bg-"+theme.btnBg+" text-"+theme.btnText+" rounded-md"} onClick={createLink}>
+                <button className={"flex items-center px-5 py-2 sm:px-10 sm:py-4 "+theme.btnBg+" "+theme.btnText+" rounded-md"} onClick={createLink}>
                     {loading && <ArrowUpIcon className="w-4 h-4 animate-bounce mr-3"/>}
                     shorten!
                 </button>
             </div>
             <div className="flex justify-between items-start mt-5">
                 <div className="flex w-full space-x-1 sm:space-x-3">
-                    <p className={"text-"+theme.text+" mt-2 sm:mt-4"}>{host}</p>
+                    <p className={theme.text+" mt-2 sm:mt-4"}>{host}</p>
                     <div className="w-full sm:w-96 ">
                         <input
                             type="text"
@@ -152,7 +152,7 @@ const Form = () => {
                             id="shorten-link"
                             value={shortenLink}
                             onChange={onShortenLinkChange}
-                            className={"block w-full p-2 sm:p-4 border rounded-md text-"+theme.text+" bg-"+theme.input+" " + (shortenLinkError !== "" ? "border-red-500" : ("border-" + theme.btnOutline))}
+                            className={"block w-full p-2 sm:p-4 border rounded-md "+theme.text+" "+theme.input+" " + (shortenLinkError !== "" ? "border-red-500" : theme.btnOutline)}
                             placeholder="path"
                         />
                         {shortenLinkError !== "" && <p className="mt-2 text-red-500 text-sm">{shortenLinkError}</p>}

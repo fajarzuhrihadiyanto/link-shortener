@@ -9,8 +9,8 @@ const Footer = () => {
     const [theme] = useContext(ThemeContext)
 
     return (
-        <div className={"fixed bottom-0 left-0 right-0 border-t-2 border-"+theme.footerOutline+" text-center p-3 bg-" + theme.footerBg}>
-            <p className={"text-" + theme.text}>Made by Fajar Zuhri Hadiyanto</p>
+        <div className={"fixed bottom-0 left-0 right-0 border-t-2 "+theme.footerOutline+" text-center p-3 " + theme.footerBg}>
+            <p className={theme.text}>Made by Fajar Zuhri Hadiyanto</p>
         </div>
     )
 }

@@ -14,7 +14,7 @@ const Layout = ({children}) => {
 
     return (
         <>
-            <div className={"flex flex-col justify-center items-center w-screen h-screen bg-" + theme.bg}>
+            <div className={"flex flex-col justify-center items-center w-screen h-screen " + theme.bg}>
                 <ThemeToggle/>
                 <Logo/>
                 {children}
