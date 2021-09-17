@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import ThemeToggle from "./ThemeToggle";
 import Logo from "./Logo";
 
-export default ({children}) => {
+const Layout = ({children}) => {
 
     // Get the theme from the provider
     const [theme] = useContext(ThemeContext)
@@ -24,20 +24,4 @@ export default ({children}) => {
     )
 }
 
-// export default class Layout extends Component {
-//
-//
-//
-//     render() {
-//         return (
-//             <ThemeProvider>
-//                 <div className={"flex flex-col justify-center items-center w-screen h-screen bg-" + theme.bg}>
-//                     {/*<ThemeToggle/>*/}
-//                     {/*<Logo/>*/}
-//                     {this.props.children}
-//                 </div>
-//                 <Footer/>
-//             </ThemeProvider>
-//         )
-//     }
-// }
+export default Layout

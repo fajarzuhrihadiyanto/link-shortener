@@ -1,9 +1,10 @@
 // IMPORT FROM THE APP
 import Form from "../components/Form";
 
-export default () => {
-
+const Home = () => {
     return (
         <Form/>
     )
 }
+
+export default Home
