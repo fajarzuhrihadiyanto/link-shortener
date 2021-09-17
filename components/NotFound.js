@@ -11,7 +11,7 @@ const NotFound = () => {
 
     return (
         <div>
-            <p className={"text-" + theme.text}>ERROR 404 : Not Found</p>
+            <p className={theme.text}>ERROR 404 : Not Found</p>
         </div>
     )
 }
