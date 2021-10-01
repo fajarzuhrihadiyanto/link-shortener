@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
         <ApolloProvider client={client}>
             <ThemeProvider>
                 <Head>
-                    <title>buka.in</title>
+                    <title>buka in</title>
                 </Head>
                 <Layout>
                     <Component {...pageProps} />

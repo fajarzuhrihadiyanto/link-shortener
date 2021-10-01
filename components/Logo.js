@@ -13,7 +13,7 @@ const Logo = () => {
     return (
         <div className="flex flex-col sm:flex-row items-center">
             <SearchIcon className={"w-28 h-28 " + theme.text}/>
-            <p className={"font-mono font-bold text-5xl " + theme.text}>buka.in</p>
+            <p className={"font-mono font-bold text-5xl " + theme.text}>buka in</p>
         </div>
     )
 }
